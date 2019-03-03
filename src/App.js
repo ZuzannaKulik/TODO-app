@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { List } from './List';
+import taskIcon from './task-icon-blue.png'
 
 class App extends Component {
   constructor() {
@@ -33,22 +34,37 @@ class App extends Component {
     });
   }
   }
+
   deleteAll() {
     this.setState({ tasks: [], id: 1 });
   }
+
   deleteTodo() {
     const { tasks, id } = this.state;
     tasks.pop();
     this.setState({ tasks, id: id - 1 });
   }
+  
   render() {
     return (
       <div className="App">
+      <header className="App-header">
+      <p></p>
+      <div className="OuterBlock">
+      <img src={taskIcon} className="App-logo" alt="logo" />
+      </div>
+      <div className="OuterBlock">
         <input type="text" onChange={this.changeCurrent} onKeyPress={this.addTodo} value={this.state.current} />
+      </div>
+      <div className="OuterBlock">
         <button onClick={this.addTodo}>Add</button>
         <button onClick={this.deleteTodo}>Remove</button>
-        <button onClick={this.deleteAll}>Remove All</button>
+        <button onClick={this.deleteAll}>Remove All</button>   
+      </div>
+        </header>
+        <body className="list-background"> 
         <List tasks={this.state.tasks} id={this.state.id}/>
+        </body>
       </div>
     );
   }

@@ -1,27 +1,103 @@
 .App {
   text-align: left;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font: bold;
 }
 
+
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  animation: App-logo-spin infinite 10s linear;
+  height: 35vmin;
   pointer-events: none;
+  align-items: center;
+  margin: 15px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #2B3B4E;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.OuterBlock{
+  display: block;
 }
+
+input{
+  margin: 15px;
+  width: 250px;
+  color:#2B3B4E;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size:25px;
+  padding:3px 0px;
+  padding-left: 15px!important; 
+  text-shadow:0px 1px 0px #3d768a;
+  border-radius:31px;
+  outline: none;
+}
+
+button{
+  margin: 15px;
+  width: 150px;
+	-moz-box-shadow: 0px 15px 23px -7px #276873;
+	-webkit-box-shadow: 0px 15px 23px -7px #276873;
+	box-shadow: 0px 15px 23px -7px #276873;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #31BAFD), color-stop(1, #31BAFD));
+	background:-moz-linear-gradient(top, #31BAFD 5%, #31BAFD 100%);
+	background:-webkit-linear-gradient(top, #31BAFD 5%, #31BAFD 100%);
+	background:-o-linear-gradient(top, #31BAFD 5%, #31BAFD 100%);
+	background:-ms-linear-gradient(top, #31BAFD 5%, #31BAFD 100%);
+	background:linear-gradient(to bottom, #31BAFD 5%, #31BAFD 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#31BAFD', endColorstr='#31BAFD',GradientType=0);
+	background-color:#31BAFD;
+	-moz-border-radius:31px;
+	-webkit-border-radius:31px;
+	border-radius:31px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding:7px 0px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #3d768a;
+  outline: none;
+}
+button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #31BAFD), color-stop(1, #31BAFD));
+	background:-moz-linear-gradient(top, #31BAFD 5%, #31BAFD 100%);
+	background:-webkit-linear-gradient(top, #31BAFD 5%, #31BAFD 100%);
+	background:-o-linear-gradient(top, #31BAFD 5%, #31BAFD 100%);
+	background:-ms-linear-gradient(top, #31BAFD 5%, #31BAFD 100%);
+	background:linear-gradient(to bottom, #31BAFD 5%, #31BAFD 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#31BAFD', endColorstr='#31BAFD',GradientType=0);
+	background-color:#31BAFD;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+
+.list-background{
+  background-color: #31BAFD;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: #2B3B4E;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font: bold;
+}
+
 
 @keyframes App-logo-spin {
   from {
